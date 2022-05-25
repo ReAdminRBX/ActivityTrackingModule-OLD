@@ -1,0 +1,16 @@
+{
+    "name": "readmin-serve",
+    "globIgnorePaths": [
+        "**/package.json",
+        "**/tsconfig.json"
+    ],
+    "tree": {
+        "$className": "DataModel",
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "MainModule": {
+                "$path": "./default.project.json"
+            }
+        }
+    }
+}
