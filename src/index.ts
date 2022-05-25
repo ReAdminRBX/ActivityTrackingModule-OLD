@@ -15,7 +15,7 @@ function checkHttpServiceEnabled() {
     return success;
 }
 
-export async function Start(loaderId: string, vipServersEnabled = false, staging = false) {
+export = async function (loaderId: string, vipServersEnabled = false, staging = false) {
     if (checkHttpServiceEnabled()) {
         print("[ReAdmin] Starting");
         const RequestService = await InitateAPI(loaderId, staging);
